@@ -5,6 +5,7 @@ import scala.concurrent.duration._
 
 object HashBenchmark {
   def main(args: Array[String]): Unit = {
+    println(args.mkString(" "))
     if (args.length < 3) {
       println("Usage: scala HashBenchmark.sc <text> <numIterations> <algorithm>")
       System.exit(1)
